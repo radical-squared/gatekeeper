@@ -11,5 +11,7 @@ The program reads RTSP stream of 6MP Dahua IPC with cv2 and processes frame by f
 ## Face recognition
 4 FPS is achieved on Deepstack running on 4GB Jetson nano: https://forum.deepstack.cc/t/deepstack-release-on-jetson/ 
 
+## Integration with Home Assistant
+The program communicates with Home Assistant with Paho MQTT. It send sliced frames to feed HA MQTT camera and provides status updates on detections and recognitions.  
 
 The program is specific to my home setup, but perhaps someone finds parts of it useful. 
