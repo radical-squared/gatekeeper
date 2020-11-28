@@ -21,6 +21,10 @@ class Mode(enum.Enum):
     FR = 3
     NO = 4
 
+def timestamp():
+    t = datetime.now()
+    s = t.strftime('%m%d_%H%M%S%f')
+    return s[:-4]    
 
 class Presence:
     def __init__(self, name):
