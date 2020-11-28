@@ -21,11 +21,6 @@ from gk import *
 gt_pad, gb_pad, gs_pad = 30, 20, 10
 
 
-def timestamp():
-    t = datetime.now()
-    s = t.strftime('%m%d_%H%M%S%f')
-    return s[:-4]
-
 
 class QueuedFrame:
     def __init__(self, frame, area):
